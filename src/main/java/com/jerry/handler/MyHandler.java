@@ -1,4 +1,4 @@
-package com.jerry;
+package com.jerry.handler;
 
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;

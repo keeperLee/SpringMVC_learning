@@ -18,7 +18,7 @@
 </bean>
 
     <!--配置Handler-->
-    <bean id="testHandler" class="com.jerry.MyHandler"></bean>
+    <bean id="testHandler" class="com.jerry.handler.MyHandler"></bean>
 
     <!-- 配置视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

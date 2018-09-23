@@ -12,6 +12,11 @@
     <title>Title</title>
 </head>
 <body>
-${name}
+<%--${name}--%>
+
+
+商品名称：${goods.name}
+<br>
+商品价格：${goods.price}
 </body>
 </html>

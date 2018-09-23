@@ -1,5 +1,7 @@
-package com.jerry;
+package com.jerry.handler;
 
+import com.jerry.entity.Goods;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -51,6 +53,20 @@ public class AnnotationHandler {
         return  "show";
     }
 
+
+    /**
+     * 添加商品并展示
+     */
+    @RequestMapping("/addGoods")
+    public ModelAndView addGoods(Goods goods){
+
+        System.out.println(goods.getName()+"---"+goods.getPrice());
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("goods",goods);
+        modelAndView.setViewName("show");
+        return modelAndView;
+
+    }
 
 
 }
