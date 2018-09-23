@@ -13,7 +13,7 @@
     <!--配置spirngmvc.xml的路径-->
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>classpath:springmvc.xml</param-value>
+      <param-value>classpath:springmvc-annotation.xml</param-value>
 
     </init-param>
   </servlet>
